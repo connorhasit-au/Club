@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Custom Chess.com club sidebar starter dashboard">
+  <title>Your Club Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-background" aria-hidden="true"></div>
+
+  <main class="dashboard">
+    <header class="club-header">
+      <span class="club-badge" aria-hidden="true">♟</span>
+      <div>
+        <p class="eyebrow">Chess.com Community</p>
+        <h1>Your Club Name</h1>
+        <p>Replace this text with your club’s mission or welcome message.</p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>Quick Links</h2>
+      <div class="link-grid">
+        <a href="https://www.chess.com/club/YOUR-CLUB-SLUG" target="_blank" rel="noopener">Club Home</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#events">Events</a>
+        <a href="#members">Members</a>
+      </div>
+    </section>
+
+    <section class="panel" id="announcements">
+      <h2>Latest Announcement</h2>
+      <p>Add current club news, event reminders, or important instructions here.</p>
+    </section>
+
+    <section class="panel radio-panel" aria-labelledby="radioTitle">
+      <div>
+        <p class="eyebrow">Club Radio</p>
+        <h2 id="radioTitle">Now Playing</h2>
+        <p id="trackTitle">No track loaded</p>
+      </div>
+      <audio id="clubAudio" preload="metadata"></audio>
+      <div class="audio-controls">
+        <button id="previousTrack" type="button" aria-label="Previous track">⏮</button>
+        <button id="playPause" type="button" aria-label="Play or pause">▶</button>
+        <button id="nextTrack" type="button" aria-label="Next track">⏭</button>
+      </div>
+      <button id="audioFallback" class="wide-button" type="button" hidden>Enable Club Music</button>
+      <p class="small-note">Add legally authorized MP3 files to the music folder, then list them in script.js.</p>
+    </section>
+
+    <section class="panel" id="events">
+      <h2>Upcoming Events</h2>
+      <p>Add cards, Chess.com event links, or API-powered data here.</p>
+    </section>
+
+    <section class="panel" id="members">
+      <h2>Community</h2>
+      <p>Recognize new members, staff, titled players, or contributors here.</p>
+    </section>
+  </main>
+
+  <div id="scanLine" class="scan-line" aria-hidden="true"></div>
+  <div id="celebrationLayer" class="celebration-layer" aria-hidden="true"></div>
+  <div id="toolMessage" class="tool-message" role="status" aria-live="polite"></div>
+
+  <button id="toolToggle" class="tool-toggle" type="button" aria-label="Open dashboard tools" aria-expanded="false">⚙</button>
+  <div id="toolPanel" class="tool-panel" hidden>
+    <button type="button" data-tool="background">◐ Simplify Background</button>
+    <button type="button" data-tool="copy">🔗 Copy Club Link</button>
+    <button type="button" data-tool="scan">▰ Scanner</button>
+    <button type="button" data-tool="up">▲ Page Up</button>
+    <button type="button" data-tool="down">▼ Page Down</button>
+    <button type="button" data-tool="celebrate">✨ Celebrate</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
