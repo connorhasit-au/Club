@@ -207,7 +207,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 
 // ---- Deploy gate ----
 const gate=$('#gate'), gateBtn=$('#gateBtn'), deployLabel=$('.deploy-label');
-const ARMING_QUOTE='"The cro on my neck will only fall with my head" — Yevgeny Rodionov';
+const ARMING_QUOTE='"The cross on my neck will only fall with my head" — Yevgeny Rodionov';
 const ARMING_DURATION=4000;
 let deploying=false;
 function deploy(){
@@ -231,7 +231,7 @@ gateBtn.addEventListener('keydown',e=>{
 });
 
 // ---- Config: replace with your real club slug ----
-const API='https://api.chess.com/pub', CLUB='YOUR-CLUB-SLUG';
+const API='https://api.chess.com/pub', CLUB='64 Squares Of War';
 
 // ---- Tabs ----
 $$('.tab').forEach(b=>b.onclick=()=>{
