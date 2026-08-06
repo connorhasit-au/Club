@@ -1,4 +1,4 @@
-const CLUB_URL = "https://www.chess.com/club/YOUR-CLUB-SLUG";
+const CLUB_URL = "https://www.chess.com/club/64 Squares Of War";
 
 const playlist = [
   { title: "Opening Theme", file: "music/opening-theme.mp3" },
